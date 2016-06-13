@@ -6,6 +6,8 @@
 
 ### Installation steps
 1. `$ git clone https://github.com/Kureev/RNUberRides.git`
-2. `$ cd RNUberRides/ios`
-3. `$ pod install`
-4. Run `RNUberRides.xcworkspace`
+2. `$ cd RNUberRides`
+3. `$ npm install`
+4. `$ cd ios`
+5. `$ pod install`
+6. Run `RNUberRides.xcworkspace`
