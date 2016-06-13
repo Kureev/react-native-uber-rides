@@ -10,4 +10,8 @@
 3. `$ npm install`
 4. `$ cd ios`
 5. `$ pod install`
-6. Run `RNUberRides.xcworkspace`
+6. Open `RNUberRides.xcworkspace`
+7. [Create an uber developer account + register your application](https://developer.uber.com/dashboard)
+8. Fill your Bundle ID on Authorization page of your app (XCode project -> General -> Bundle Identificator)
+9. Grand appropriate permissions for your app
+10. Enjoy!
