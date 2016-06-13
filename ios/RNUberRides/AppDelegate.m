@@ -13,6 +13,17 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  
+  BOOL handledURL = [[UBSDKRidesAppDelegate sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+  
+  if (!handledURL) {
+    // Do something here
+  }
+  
+  return true;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;

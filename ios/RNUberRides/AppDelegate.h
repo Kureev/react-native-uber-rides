@@ -8,6 +8,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <UberRides/UberRides-Swift.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

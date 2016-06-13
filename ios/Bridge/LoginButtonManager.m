@@ -19,9 +19,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  NSArray<UBSDKRidesScope *> *scopes = @[UBSDKRidesScope.Profile,
-                                         UBSDKRidesScope.Places,
-                                         UBSDKRidesScope.Request];
+  NSArray<UBSDKRidesScope *> *scopes = @[UBSDKRidesScope.Profile];
   
   UBSDKLoginManager *loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
   UBSDKLoginButton *loginButton = [[UBSDKLoginButton alloc] initWithFrame:CGRectZero scopes:scopes loginManager:loginManager];
@@ -38,9 +36,9 @@ RCT_EXPORT_MODULE()
 
 - (void)loginButton:(UBSDKLoginButton *)button didCompleteLoginWithToken:(UBSDKAccessToken *)accessToken error:(NSError *)error {
   if (accessToken) {
-    NSLog(@"%@", [accessToken description]);
+    // Do something with accessToken
   } else if (error) {
-    NSLog(@"%@", [error localizedDescription]);
+    NSLog(@"Error: %@", [error localizedDescription]);
   }
 }
 
