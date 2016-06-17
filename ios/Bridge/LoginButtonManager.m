@@ -21,7 +21,7 @@ RCT_EXPORT_MODULE()
 {
   NSArray<UBSDKRidesScope *> *scopes = @[UBSDKRidesScope.Profile];
   LoginButton *loginButton = [[LoginButton alloc] initWithFrame:CGRectZero scopes:scopes];
-//  loginButton.delegate = self;
+  loginButton.delegate = self;
   return loginButton;
 }
 

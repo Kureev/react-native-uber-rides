@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame scopes:(NSArray<UBSDKRidesScope *> *)scopes;
 
+@property (nonatomic, weak) id <UBSDKLoginButtonDelegate> _Nullable delegate;
+
 @end
 
 NS_ASSUME_NONNULL_END
