@@ -20,11 +20,8 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
   NSArray<UBSDKRidesScope *> *scopes = @[UBSDKRidesScope.Profile];
-  
-  UBSDKLoginManager *loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
-  UBSDKLoginButton *loginButton = [[UBSDKLoginButton alloc] initWithFrame:CGRectZero scopes:scopes loginManager:loginManager];
-  
-  loginButton.delegate = self;
+  LoginButton *loginButton = [[LoginButton alloc] initWithFrame:CGRectZero scopes:scopes];
+//  loginButton.delegate = self;
   return loginButton;
 }
 

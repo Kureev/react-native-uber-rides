@@ -24,19 +24,15 @@
 
 #import <UIKit/UIKit.h>
 #import <UberRides/UberRides-Swift.h>
-#define UBSDKLOC(LOC_STRING) UBSDKLocalizedString(LOC_STRING)
-#define UBSDKLocalizedString(key, ...) [NSString stringWithFormat:[[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"Localizations" ofType:@"bundle"]] localizedStringForKey:(key) value:@"" table:@"UberRides"], ##__VA_ARGS__, nil]
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  *  View that has a single UBSDKLoginButton in the center
  */
-@interface UBSDKLoginButtonView : UIView
+@interface LoginButton : UIView
 
-@property (nonatomic, readonly, nonnull) UBSDKLoginButton *loginButton;
-
-- (instancetype)initWithFrame:(CGRect)frame scopes:(NSArray<UBSDKRidesScope *> *)scopes loginType:(UBSDKLoginType)loginType;
+- (instancetype)initWithFrame:(CGRect)frame scopes:(NSArray<UBSDKRidesScope *> *)scopes;
 
 @end
 

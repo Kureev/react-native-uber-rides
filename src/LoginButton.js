@@ -5,6 +5,7 @@ const style = {
   width: 300,
   height: 50,
   backgroundColor: 'black',
+  borderRadius: 7,
   marginTop: 10
 };
 

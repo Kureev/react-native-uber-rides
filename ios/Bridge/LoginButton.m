@@ -24,26 +24,75 @@
 
 #import "LoginButton.h"
 
-@interface UBSDKLoginButtonView()
+@interface LoginButton()
 
 @property (nonatomic, nonnull) UBSDKLoginManager *loginManager;
 @property (nonatomic, readonly, nonnull) NSArray<UBSDKRidesScope *> *scopes;
 
 @end
 
-@implementation UBSDKLoginButtonView
+@implementation LoginButton
 
-#pragma mark - UBSDKLoginButtonView
+#pragma mark - LoginButton
 
-- (instancetype)initWithFrame:(CGRect)frame scopes:(NSArray<UBSDKRidesScope *> *)scopes loginType:(UBSDKLoginType)loginType {
+- (instancetype)initWithFrame:(CGRect)frame
+                       scopes:(NSArray<UBSDKRidesScope *> *)scopes {
+  
   self = [super initWithFrame:frame];
   if (self) {
     _scopes = scopes;
-    _loginManager = [[UBSDKLoginManager alloc] initWithLoginType:loginType];
-    _loginButton = [[UBSDKLoginButton alloc] initWithFrame:CGRectZero scopes:scopes loginManager:_loginManager];
+    UBSDKLoginManager *loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
+    UBSDKLoginButton *_loginButton = [[UBSDKLoginButton alloc]
+                    initWithFrame:CGRectZero
+                    scopes:scopes
+                    loginManager:loginManager];
+    
     [self addSubview:_loginButton];
+    [self _addLoginButtonConstraints:_loginButton];
   }
   return self;
+}
+
+- (void) _addLoginButtonConstraints: (UBSDKLoginButton *)_loginButton {
+  _loginButton.translatesAutoresizingMaskIntoConstraints = NO;
+  
+  NSLayoutConstraint *centerXConstraint = [NSLayoutConstraint
+                                           constraintWithItem:_loginButton
+                                           attribute:NSLayoutAttributeCenterX
+                                           relatedBy:NSLayoutRelationEqual
+                                           toItem:self
+                                           attribute:NSLayoutAttributeCenterX
+                                           multiplier:1.0
+                                           constant:0.0];
+  
+  NSLayoutConstraint *centerYConstraint = [NSLayoutConstraint
+                                           constraintWithItem:_loginButton
+                                           attribute:NSLayoutAttributeCenterY
+                                           relatedBy:NSLayoutRelationEqual
+                                           toItem:self
+                                           attribute:NSLayoutAttributeCenterY
+                                           multiplier:1.0
+                                           constant:0.0];
+  
+  NSLayoutConstraint *widthConstraint = [NSLayoutConstraint
+                                         constraintWithItem:_loginButton
+                                         attribute:NSLayoutAttributeWidth
+                                         relatedBy:NSLayoutRelationEqual
+                                         toItem:self
+                                         attribute:NSLayoutAttributeWidth
+                                         multiplier:1.0
+                                         constant:0.0];
+  
+  NSLayoutConstraint *heightConstraint = [NSLayoutConstraint
+                                          constraintWithItem:_loginButton
+                                          attribute:NSLayoutAttributeHeight
+                                          relatedBy:NSLayoutRelationEqual
+                                          toItem:self
+                                          attribute:NSLayoutAttributeHeight
+                                          multiplier:1.0
+                                          constant:0.0];
+  
+  [self addConstraints:@[centerXConstraint, centerYConstraint, widthConstraint, heightConstraint]];
 }
 
 @end
