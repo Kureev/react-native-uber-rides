@@ -12,5 +12,9 @@ const style = {
 const Button = requireNativeComponent('LoginButton', null);
 
 export default function UberLoginButton(props) {
-  return <Button style={style}/>
+  return <Button style={style}
+    onLogin={({nativeEvent}) => alert(nativeEvent.token)}
+    onLogout={() => alert('Logout')}
+    onLoginError={() => alert('Error')}
+    />;
 };

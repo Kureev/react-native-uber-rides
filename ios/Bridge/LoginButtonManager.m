@@ -9,7 +9,10 @@
 #import "LoginButton.h"
 #import "LoginButtonManager.h"
 
-@interface LoginButtonManager()<UBSDKLoginButtonDelegate>
+@interface LoginButtonManager()
+
+@property (nonatomic, nonnull) UBSDKLoginManager *loginManager;
+
 @end
 
 
@@ -17,26 +20,19 @@
 
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_VIEW_PROPERTY(onLogin, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onLogout, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onLoginError, RCTBubblingEventBlock)
+
 - (UIView *)view
 {
   NSArray<UBSDKRidesScope *> *scopes = @[UBSDKRidesScope.Profile];
-  LoginButton *loginButton = [[LoginButton alloc] initWithFrame:CGRectZero scopes:scopes];
-  loginButton.delegate = self;
+  _loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
+  LoginButton *loginButton = [[LoginButton alloc]
+                              initWithFrame:CGRectZero
+                              scopes:scopes
+                              loginManager:_loginManager];
   return loginButton;
-}
-
-#pragma mark - UBSDKLoginButtonDelegate
-
-- (void)loginButton:(UBSDKLoginButton *)button didLogoutWithSuccess:(BOOL)success {
-  // success is true if logout succeeded, false otherwise
-}
-
-- (void)loginButton:(UBSDKLoginButton *)button didCompleteLoginWithToken:(UBSDKAccessToken *)accessToken error:(NSError *)error {
-  if (accessToken) {
-    // Do something with accessToken
-  } else if (error) {
-    NSLog(@"Error: %@", [error localizedDescription]);
-  }
 }
 
 @end

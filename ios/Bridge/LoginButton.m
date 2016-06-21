@@ -24,7 +24,7 @@
 
 #import "LoginButton.h"
 
-@interface LoginButton()
+@interface LoginButton()<UBSDKLoginButtonDelegate>
 
 @property (nonatomic, nonnull) UBSDKLoginManager *loginManager;
 @property (nonatomic, readonly, nonnull) NSArray<UBSDKRidesScope *> *scopes;
@@ -36,22 +36,39 @@
 #pragma mark - LoginButton
 
 - (instancetype)initWithFrame:(CGRect)frame
-                       scopes:(NSArray<UBSDKRidesScope *> *)scopes {
+                       scopes:(NSArray<UBSDKRidesScope *> *)scopes
+                 loginManager:(UBSDKLoginManager *)loginManager {
   
   self = [super initWithFrame:frame];
   if (self) {
     _scopes = scopes;
-    UBSDKLoginManager *loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
     UBSDKLoginButton *_loginButton = [[UBSDKLoginButton alloc]
                     initWithFrame:CGRectZero
                     scopes:scopes
                     loginManager:loginManager];
     
+    _loginButton.delegate = self;
     [self addSubview:_loginButton];
     [self _addLoginButtonConstraints:_loginButton];
   }
   return self;
 }
+
+#pragma mark - UBSDKLoginButtonDelegate
+
+- (void)loginButton:(UBSDKLoginButton *)button didLogoutWithSuccess:(BOOL)success {
+  self.onLogout(@{});
+}
+
+- (void)loginButton:(UBSDKLoginButton *)button didCompleteLoginWithToken:(UBSDKAccessToken *)accessToken error:(NSError *)error {
+  if (accessToken) {
+    self.onLogin(@{@"token": accessToken.tokenString});
+  } else if (error) {
+    self.onLoginError(@{@"error": [error localizedDescription]});
+  }
+}
+
+#pragma mark - LoginButton constraints
 
 - (void) _addLoginButtonConstraints: (UBSDKLoginButton *)_loginButton {
   _loginButton.translatesAutoresizingMaskIntoConstraints = NO;
