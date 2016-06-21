@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import LoginButton from './src/LoginButton';
 import {
@@ -18,16 +12,17 @@ class RNUberRides extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          React Native Uber SDK
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
+          To get started, please, check the readme
         </Text>
 
-        <LoginButton />
+        <LoginButton style={styles.uberButton}
+          onLogout={() => alert('LOGOUT')}
+          onLogin={() => alert('LOGIN')}
+          onLoginError={() => alert('ERROR')}
+        />
       </View>
     );
   }
@@ -49,6 +44,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  uberButton: {
+    marginTop: 10,
   },
 });
 

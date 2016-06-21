@@ -57,14 +57,17 @@
 #pragma mark - UBSDKLoginButtonDelegate
 
 - (void)loginButton:(UBSDKLoginButton *)button didLogoutWithSuccess:(BOOL)success {
-  self.onLogout(@{});
+  _onLogout(@{@"isLoggedOut": @(success)});
 }
 
 - (void)loginButton:(UBSDKLoginButton *)button didCompleteLoginWithToken:(UBSDKAccessToken *)accessToken error:(NSError *)error {
   if (accessToken) {
-    self.onLogin(@{@"token": accessToken.tokenString});
+    _onLogin(@{
+                   @"accessToken": accessToken.tokenString,
+                   @"renewToken": accessToken.refreshToken
+                   });
   } else if (error) {
-    self.onLoginError(@{@"error": [error localizedDescription]});
+    _onLoginError(@{@"error": [error localizedDescription]});
   }
 }
 
