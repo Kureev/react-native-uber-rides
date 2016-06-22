@@ -39,8 +39,8 @@ UberLoginButton.propTypes = {
    */
   onLoginError: React.PropTypes.func,
   /**
-   * Callback that is called with `logout` parameter after user's logout
-   * @param {Boolean} nativeEvent.logout
+   * Callback that is called with `isLoggedOut` parameter after user's logout
+   * @param {Boolean} nativeEvent.isLoggedOut
    */
   onLogout: React.PropTypes.func,
 };
