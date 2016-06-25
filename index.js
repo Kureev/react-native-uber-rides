@@ -1,5 +1,5 @@
-const LoginButton = require('./src/LoginButton');
+import LoginButton from './src/LoginButton';
 
-module.exports = {
+export default {
   LoginButton,
 };
