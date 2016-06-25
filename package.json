@@ -1,12 +1,22 @@
 {
-  "name": "RNUberRides",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-uber-rides",
+  "version": "0.1.0",
+  "description": "React Native port for Uber Rides SDK",
+  "main": "index.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "react": "^15.1.0",
-    "react-native": "^0.27.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kureev/react-native-uber-rides.git"
+  },
+  "keywords": [
+    "uber"
+  ],
+  "author": "Alexey Kureev <kureev-mail@ya.ru> (https://github.com/Kureev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kureev/RNUberRides/issues"
+  },
+  "homepage": "https://github.com/Kureev/RNUberRides#readme"
 }
