@@ -9,6 +9,7 @@
 3. [Configure iOS 9.0](https://github.com/uber/rides-ios-sdk#configuring-ios-90)
 4. [Configure SDK](https://github.com/uber/rides-ios-sdk#sdk-configuration)
 5. Use it:
+
   ```js
   var UberLogin = require('react-native-uber-rides').LoginButton;
   // ...
