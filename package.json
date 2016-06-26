@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Kureev/RNUberRides/issues"
   },
+  "rnpm": {
+    "ios": {
+      "project": "UberRidesSDK/UberRides.xcodeproj"
+    }
+  },
   "homepage": "https://github.com/Kureev/RNUberRides#readme"
 }
