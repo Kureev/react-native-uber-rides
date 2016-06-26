@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4403BC53303025133276511ADA74288E4A8B27AA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : 0,
+    "4403BC53303025133276511ADA74288E4A8B27AA" : 0,
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89DAB4AA-9E20-449F-8872-70F1F06E95C7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : "rides-ios-sdk\/Carthage\/Checkouts\/ObjectMapper\/",
+    "4403BC53303025133276511ADA74288E4A8B27AA" : "rides-ios-sdk\/",
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : "rides-ios-sdk\/Carthage\/Checkouts\/OHHTTPStubs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UberRides",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "source\/UberRides.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/uber\/rides-ios-sdk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4403BC53303025133276511ADA74288E4A8B27AA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Hearst-DD\/ObjectMapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AliSoftware\/OHHTTPStubs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2"
+    }
+  ]
+}
