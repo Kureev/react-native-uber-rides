@@ -16,12 +16,12 @@
   "author": "Alexey Kureev <kureev-mail@ya.ru> (https://github.com/Kureev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kureev/RNUberRides/issues"
+    "url": "https://github.com/Kureev/react-native-uber-rides/issues"
   },
   "rnpm": {
     "ios": {
-      "project": "RNUberRides/RNUberRides.xcodeproj"
+      "project": "UberRidesSDK/UberRidesSDK.xcodeproj"
     }
   },
-  "homepage": "https://github.com/Kureev/RNUberRides#readme"
+  "homepage": "https://github.com/Kureev/react-native-uber-rides#readme"
 }
