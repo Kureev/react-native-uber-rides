@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		A6288C7D1D209B000020A1D0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6288C401D209AD80020A1D0 /* ObjectMapper.framework */; };
 		A6288C7E1D209B000020A1D0 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6288C5A1D209AD80020A1D0 /* OHHTTPStubs.framework */; };
-		A6288C841D209B920020A1D0 /* LoginButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A6288C801D209B920020A1D0 /* LoginButton.h */; };
-		A6288C851D209B920020A1D0 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6288C811D209B920020A1D0 /* LoginButton.m */; };
-		A6288C861D209B920020A1D0 /* LoginButtonManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6288C821D209B920020A1D0 /* LoginButtonManager.h */; };
-		A6288C871D209B920020A1D0 /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6288C831D209B920020A1D0 /* LoginButtonManager.m */; };
 		AC0404791BFACD1D00AC1501 /* UberRides.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0404781BFACD1D00AC1501 /* UberRides.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC0404941BFACDAF00AC1501 /* RequestDeeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0404931BFACDAF00AC1501 /* RequestDeeplink.swift */; };
 		AC0404961BFACDC900AC1501 /* RidesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0404951BFACDC900AC1501 /* RidesClient.swift */; };
@@ -404,10 +400,6 @@
 		A6288C351D209AD80020A1D0 /* OHHTTPStubs iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OHHTTPStubs iOS-Info.plist"; sourceTree = "<group>"; };
 		A6288C361D209AD80020A1D0 /* OHHTTPStubs Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OHHTTPStubs Mac-Info.plist"; sourceTree = "<group>"; };
 		A6288C371D209AD80020A1D0 /* OHHTTPStubsUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHHTTPStubsUmbrella.h; sourceTree = "<group>"; };
-		A6288C801D209B920020A1D0 /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginButton.h; path = ../src/ios/LoginButton.h; sourceTree = "<group>"; };
-		A6288C811D209B920020A1D0 /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginButton.m; path = ../src/ios/LoginButton.m; sourceTree = "<group>"; };
-		A6288C821D209B920020A1D0 /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginButtonManager.h; path = ../src/ios/LoginButtonManager.h; sourceTree = "<group>"; };
-		A6288C831D209B920020A1D0 /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginButtonManager.m; path = ../src/ios/LoginButtonManager.m; sourceTree = "<group>"; };
 		AC0404751BFACD1D00AC1501 /* UberRides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UberRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0404781BFACD1D00AC1501 /* UberRides.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UberRides.h; sourceTree = "<group>"; };
 		AC04047A1BFACD1D00AC1501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -943,21 +935,9 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A6288C7F1D209B560020A1D0 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				A6288C801D209B920020A1D0 /* LoginButton.h */,
-				A6288C811D209B920020A1D0 /* LoginButton.m */,
-				A6288C821D209B920020A1D0 /* LoginButtonManager.h */,
-				A6288C831D209B920020A1D0 /* LoginButtonManager.m */,
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
 		AC04046B1BFACD1D00AC1501 = {
 			isa = PBXGroup;
 			children = (
-				A6288C7F1D209B560020A1D0 /* Libraries */,
 				AC0404771BFACD1D00AC1501 /* UberRides */,
 				AC0404761BFACD1D00AC1501 /* Products */,
 				F036511333B3B5067F8B6DC8 /* Frameworks */,
@@ -1094,9 +1074,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6288C841D209B920020A1D0 /* LoginButton.h in Headers */,
 				AC0404791BFACD1D00AC1501 /* UberRides.h in Headers */,
-				A6288C861D209B920020A1D0 /* LoginButtonManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1354,7 +1332,6 @@
 				D8E2C96C1C62B3B2006091BA /* PriceEstimate.swift in Sources */,
 				DC92DC001CA32CB7001A0DCC /* LoginView.swift in Sources */,
 				D829FD531C98A09F00AC6578 /* UserActivity.swift in Sources */,
-				A6288C851D209B920020A1D0 /* LoginButton.m in Sources */,
 				D81C853C1CC848F800DC82EE /* PaymentMethod.swift in Sources */,
 				D8D18E811CBF419700055B76 /* RideStatus.swift in Sources */,
 				AC0404941BFACDAF00AC1501 /* RequestDeeplink.swift in Sources */,
@@ -1382,7 +1359,6 @@
 				D8D18E831CBF41F200055B76 /* Driver.swift in Sources */,
 				DCAEA9941CEE91D000E6F239 /* AuthenticationURLUtility.swift in Sources */,
 				DC673D101CF5084000F36E2B /* BaseDeeplink.swift in Sources */,
-				A6288C871D209B920020A1D0 /* LoginButtonManager.m in Sources */,
 				DC2C77911CACDDD000A052BA /* ModalRideRequestViewController.swift in Sources */,
 				D8A0D7231C73A74700707DC6 /* RidesScope.swift in Sources */,
 				DC673D121CF5184D00F36E2B /* AppStoreDeeplink.swift in Sources */,

@@ -1,3 +1,7 @@
-import LoginButton from './src/js/LoginButton';
+import LoginComponent from './src/js/LoginButton';
 
-export LoginButton;
+export default {
+  LoginButton: LoginComponent
+}
+
+export const LoginButton = LoginComponent;
