@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A64B94241D218C3800F40DCF /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94211D218C3800F40DCF /* LoginButton.m */; };
 		A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94231D218C3800F40DCF /* LoginButtonManager.m */; };
-		A64B94311D218CBC00F40DCF /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64B94301D218CB300F40DCF /* UberRides.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64B94311D218CBC00F40DCF /* UberRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +255,7 @@
 		A64B94001D218AD800F40DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../UberRidesSDK/**",
@@ -271,7 +269,7 @@
 		A64B94011D218AD800F40DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../UberRidesSDK/**",
