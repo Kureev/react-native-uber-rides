@@ -20,7 +20,7 @@
   },
   "rnpm": {
     "ios": {
-      "project": "UberRidesSDK/UberRides.xcodeproj"
+      "project": "RNUberRides/RNUberRides.xcodeproj"
     }
   },
   "homepage": "https://github.com/Kureev/RNUberRides#readme"
