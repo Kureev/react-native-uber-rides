@@ -9,17 +9,8 @@
 /* Begin PBXBuildFile section */
 		A64B94241D218C3800F40DCF /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94211D218C3800F40DCF /* LoginButton.m */; };
 		A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94231D218C3800F40DCF /* LoginButtonManager.m */; };
+		A672DFF51D21D93100C26997 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A672DFF41D21D93100C26997 /* UberRides.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A64B942F1D218CB300F40DCF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A64B94281D218CB300F40DCF /* UberRides.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AC0404751BFACD1D00AC1501;
-			remoteInfo = UberRides;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A64B93F41D218AD800F40DCF /* CopyFiles */ = {
@@ -39,7 +30,7 @@
 		A64B94211D218C3800F40DCF /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
 		A64B94221D218C3800F40DCF /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButtonManager.h; sourceTree = "<group>"; };
 		A64B94231D218C3800F40DCF /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButtonManager.m; sourceTree = "<group>"; };
-		A64B94281D218CB300F40DCF /* UberRides.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberRides.xcodeproj; path = ../UberRidesSDK/UberRides.xcodeproj; sourceTree = "<group>"; };
+		A672DFF41D21D93100C26997 /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UberRides.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A672DFF51D21D93100C26997 /* UberRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +48,7 @@
 		A64B93ED1D218AD800F40DCF = {
 			isa = PBXGroup;
 			children = (
-				A64B94281D218CB300F40DCF /* UberRides.xcodeproj */,
+				A672DFF41D21D93100C26997 /* UberRides.framework */,
 				A64B93F81D218AD800F40DCF /* RNUberSDK */,
 				A64B93F71D218AD800F40DCF /* Products */,
 			);
@@ -79,14 +71,6 @@
 				A64B94231D218C3800F40DCF /* LoginButtonManager.m */,
 			);
 			path = RNUberSDK;
-			sourceTree = "<group>";
-		};
-		A64B94291D218CB300F40DCF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A64B94301D218CB300F40DCF /* UberRides.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,28 +118,12 @@
 			mainGroup = A64B93ED1D218AD800F40DCF;
 			productRefGroup = A64B93F71D218AD800F40DCF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A64B94291D218CB300F40DCF /* Products */;
-					ProjectRef = A64B94281D218CB300F40DCF /* UberRides.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A64B93F51D218AD800F40DCF /* RNUberSDK */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A64B94301D218CB300F40DCF /* UberRides.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UberRides.framework;
-			remoteRef = A64B942F1D218CB300F40DCF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A64B93F21D218AD800F40DCF /* Sources */ = {
@@ -255,7 +223,11 @@
 		A64B94001D218AD800F40DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../UberRidesSDK/**",
@@ -269,7 +241,11 @@
 		A64B94011D218AD800F40DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../UberRidesSDK/**",
