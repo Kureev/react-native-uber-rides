@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6411D7F1D20B00C00EA9275 /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A6411D7C1D20B00C00EA9275 /* LoginButton.m */; };
-		A6411D801D20B00C00EA9275 /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6411D7E1D20B00C00EA9275 /* LoginButtonManager.m */; };
+		A64B94241D218C3800F40DCF /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94211D218C3800F40DCF /* LoginButton.m */; };
+		A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94231D218C3800F40DCF /* LoginButtonManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A6411D6D1D20AFF700EA9275 /* CopyFiles */ = {
+		A64B93F41D218AD800F40DCF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -24,15 +24,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A6411D6F1D20AFF700EA9275 /* libRNUberRides.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNUberRides.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6411D7B1D20B00C00EA9275 /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginButton.h; path = ../../src/ios/LoginButton.h; sourceTree = "<group>"; };
-		A6411D7C1D20B00C00EA9275 /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginButton.m; path = ../../src/ios/LoginButton.m; sourceTree = "<group>"; };
-		A6411D7D1D20B00C00EA9275 /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginButtonManager.h; path = ../../src/ios/LoginButtonManager.h; sourceTree = "<group>"; };
-		A6411D7E1D20B00C00EA9275 /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginButtonManager.m; path = ../../src/ios/LoginButtonManager.m; sourceTree = "<group>"; };
+		A64B93F61D218AD800F40DCF /* libRNUberSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNUberSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64B94201D218C3800F40DCF /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButton.h; sourceTree = "<group>"; };
+		A64B94211D218C3800F40DCF /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
+		A64B94221D218C3800F40DCF /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButtonManager.h; sourceTree = "<group>"; };
+		A64B94231D218C3800F40DCF /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButtonManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A6411D6C1D20AFF700EA9275 /* Frameworks */ = {
+		A64B93F31D218AD800F40DCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,99 +42,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6411D661D20AFF700EA9275 = {
+		A64B93ED1D218AD800F40DCF = {
 			isa = PBXGroup;
 			children = (
-				A6411D711D20AFF700EA9275 /* RNUberRides */,
-				A6411D701D20AFF700EA9275 /* Products */,
+				A64B93F81D218AD800F40DCF /* RNUberSDK */,
+				A64B93F71D218AD800F40DCF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A6411D701D20AFF700EA9275 /* Products */ = {
+		A64B93F71D218AD800F40DCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6411D6F1D20AFF700EA9275 /* libRNUberRides.a */,
+				A64B93F61D218AD800F40DCF /* libRNUberSDK.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6411D711D20AFF700EA9275 /* RNUberRides */ = {
+		A64B93F81D218AD800F40DCF /* RNUberSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A6411D7B1D20B00C00EA9275 /* LoginButton.h */,
-				A6411D7C1D20B00C00EA9275 /* LoginButton.m */,
-				A6411D7D1D20B00C00EA9275 /* LoginButtonManager.h */,
-				A6411D7E1D20B00C00EA9275 /* LoginButtonManager.m */,
+				A64B94201D218C3800F40DCF /* LoginButton.h */,
+				A64B94211D218C3800F40DCF /* LoginButton.m */,
+				A64B94221D218C3800F40DCF /* LoginButtonManager.h */,
+				A64B94231D218C3800F40DCF /* LoginButtonManager.m */,
 			);
-			path = RNUberRides;
+			path = RNUberSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6411D6E1D20AFF700EA9275 /* RNUberRides */ = {
+		A64B93F51D218AD800F40DCF /* RNUberSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6411D781D20AFF700EA9275 /* Build configuration list for PBXNativeTarget "RNUberRides" */;
+			buildConfigurationList = A64B93FF1D218AD800F40DCF /* Build configuration list for PBXNativeTarget "RNUberSDK" */;
 			buildPhases = (
-				A6411D6B1D20AFF700EA9275 /* Sources */,
-				A6411D6C1D20AFF700EA9275 /* Frameworks */,
-				A6411D6D1D20AFF700EA9275 /* CopyFiles */,
+				A64B93F21D218AD800F40DCF /* Sources */,
+				A64B93F31D218AD800F40DCF /* Frameworks */,
+				A64B93F41D218AD800F40DCF /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RNUberRides;
-			productName = RNUberRides;
-			productReference = A6411D6F1D20AFF700EA9275 /* libRNUberRides.a */;
+			name = RNUberSDK;
+			productName = RNUberSDK;
+			productReference = A64B93F61D218AD800F40DCF /* libRNUberSDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A6411D671D20AFF700EA9275 /* Project object */ = {
+		A64B93EE1D218AD800F40DCF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = RNUber;
 				TargetAttributes = {
-					A6411D6E1D20AFF700EA9275 = {
+					A64B93F51D218AD800F40DCF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = J966JLDEF9;
 					};
 				};
 			};
-			buildConfigurationList = A6411D6A1D20AFF700EA9275 /* Build configuration list for PBXProject "RNUberRides" */;
+			buildConfigurationList = A64B93F11D218AD800F40DCF /* Build configuration list for PBXProject "RNUberSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A6411D661D20AFF700EA9275;
-			productRefGroup = A6411D701D20AFF700EA9275 /* Products */;
+			mainGroup = A64B93ED1D218AD800F40DCF;
+			productRefGroup = A64B93F71D218AD800F40DCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6411D6E1D20AFF700EA9275 /* RNUberRides */,
+				A64B93F51D218AD800F40DCF /* RNUberSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6411D6B1D20AFF700EA9275 /* Sources */ = {
+		A64B93F21D218AD800F40DCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6411D7F1D20B00C00EA9275 /* LoginButton.m in Sources */,
-				A6411D801D20B00C00EA9275 /* LoginButtonManager.m in Sources */,
+				A64B94241D218C3800F40DCF /* LoginButton.m in Sources */,
+				A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A6411D761D20AFF700EA9275 /* Debug */ = {
+		A64B93FD1D218AD800F40DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -178,7 +178,7 @@
 			};
 			name = Debug;
 		};
-		A6411D771D20AFF700EA9275 /* Release */ = {
+		A64B93FE1D218AD800F40DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,30 +216,20 @@
 			};
 			name = Release;
 		};
-		A6411D791D20AFF700EA9275 /* Debug */ = {
+		A64B94001D218AD800F40DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(SRCROOT)/../**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A6411D7A1D20AFF700EA9275 /* Release */ = {
+		A64B94011D218AD800F40DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(SRCROOT)/../**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -249,25 +239,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6411D6A1D20AFF700EA9275 /* Build configuration list for PBXProject "RNUberRides" */ = {
+		A64B93F11D218AD800F40DCF /* Build configuration list for PBXProject "RNUberSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6411D761D20AFF700EA9275 /* Debug */,
-				A6411D771D20AFF700EA9275 /* Release */,
+				A64B93FD1D218AD800F40DCF /* Debug */,
+				A64B93FE1D218AD800F40DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6411D781D20AFF700EA9275 /* Build configuration list for PBXNativeTarget "RNUberRides" */ = {
+		A64B93FF1D218AD800F40DCF /* Build configuration list for PBXNativeTarget "RNUberSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6411D791D20AFF700EA9275 /* Debug */,
-				A6411D7A1D20AFF700EA9275 /* Release */,
+				A64B94001D218AD800F40DCF /* Debug */,
+				A64B94011D218AD800F40DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A6411D671D20AFF700EA9275 /* Project object */;
+	rootObject = A64B93EE1D218AD800F40DCF /* Project object */;
 }
