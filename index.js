@@ -1,4 +1,4 @@
-import LoginComponent from './src/js/LoginButton';
+import LoginComponent from './src/LoginButton';
 
 export default {
   LoginButton: LoginComponent
