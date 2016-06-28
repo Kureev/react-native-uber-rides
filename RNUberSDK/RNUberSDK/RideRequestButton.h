@@ -7,10 +7,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RideRequestButton : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame;
+- (void)initRouteForButton;
 
 @property (nonatomic, weak) id <UBSDKRideRequestButtonDelegate> _Nullable delegate;
-@property (nonatomic, assign) NSDictionary *pickup;
-@property (nonatomic, assign) NSDictionary *dropoff;
+@property (nonatomic, strong) NSDictionary *pickup;
+@property (nonatomic, strong) NSDictionary *dropoff;
 
 @end
 

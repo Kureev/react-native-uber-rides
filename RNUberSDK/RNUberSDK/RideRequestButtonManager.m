@@ -2,7 +2,7 @@
 #import "RideRequestButtonManager.h"
 
 
-@interface RideRequestButtonManager()<UBSDKRideRequestButtonDelegate>
+@interface RideRequestButtonManager()
 @end
 
 
@@ -13,18 +13,30 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
   RideRequestButton *rideRequestButton = [[RideRequestButton alloc] initWithFrame:CGRectZero];
-  rideRequestButton.delegate = self;
+  
   return rideRequestButton;
+}
+
+- (BOOL) canFetchRoute: (RideRequestButton *)rideRequestButton {
+  return rideRequestButton.dropoff && rideRequestButton.pickup;
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(pickup, NSDictionary, RideRequestButton)
 {
   view.pickup = [RCTConvert NSDictionary:json];
+  
+  if ([self canFetchRoute:view]) {
+    [view initRouteForButton];
+  }
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(dropoff, NSDictionary, RideRequestButton)
 {
   view.dropoff = [RCTConvert NSDictionary:json];
+  
+  if ([self canFetchRoute:view]) {
+    [view initRouteForButton];
+  }
 }
 
 @end

@@ -1,47 +1,32 @@
 #import "RideRequestButton.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface RideRequestButton()
-
+@interface RideRequestButton()<UBSDKRideRequestButtonDelegate>
 @property (nonatomic, nonnull) CLLocationManager *locationManager;
-
+@property (nonatomic, strong) UBSDKRideRequestButton *button;
 @end
 
 @implementation RideRequestButton
 
-- (void)setPickup:(NSDictionary *)pickup
-{
-  _pickup = pickup;
-}
-
-- (void)setDropoff:(NSDictionary *)dropoff
-{
-  _dropoff = dropoff;
-}
-
 #pragma mark - RideRequestButton
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (void) rideRequestButton:(UBSDKRideRequestButton *)button didReceiveError:(UBSDKRidesError *)error {
+  
+}
 
+- (void) rideRequestButtonDidLoadRideInformation:(UBSDKRideRequestButton *)button {
+  
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+  
   self = [super initWithFrame:frame];
   if (self) {
-    UBSDKRideRequestButton *button = [[UBSDKRideRequestButton alloc] init];
-    UBSDKRidesClient *ridesClient = [[UBSDKRidesClient alloc] init];
-    CLLocation *pickupLocation = [[CLLocation alloc] initWithLatitude: [_pickup[@"latitude"] doubleValue] longitude: [_pickup[@"longitude"] doubleValue]];
-    CLLocation *dropoffLocation = [[CLLocation alloc] initWithLatitude: [_dropoff[@"latitude"] doubleValue] longitude: [_dropoff[@"longitude"] doubleValue]];
-    __block UBSDKRideParametersBuilder *builder = [[UBSDKRideParametersBuilder alloc] init];
-    builder = [builder setPickupLocation: pickupLocation];
-    builder = [builder setDropoffLocation: dropoffLocation];
-    [ridesClient fetchCheapestProductWithPickupLocation: pickupLocation completion:^(UBSDKUberProduct* _Nullable product, UBSDKResponse* _Nullable response) {
-        if (product) {
-            builder = [builder setProductID: product.productID];
-            button.rideParameters = [builder build];
-            [button loadRideInformation];
-        }
-    }];
-
-    [self addSubview:button];
-    [self _addRideRequestButtonConstraints:button];
+    _button = [[UBSDKRideRequestButton alloc] init];
+    _button.delegate = self;
+    
+    [self addSubview:_button];
+    [self _addRideRequestButtonConstraints:_button];
   }
   return self;
 }
@@ -87,6 +72,29 @@
                                           constant:0.0];
 
   [self addConstraints:@[centerXConstraint, centerYConstraint, widthConstraint, heightConstraint]];
+}
+
+- (void) initRouteForButton {
+  UBSDKRidesClient *ridesClient = [[UBSDKRidesClient alloc] init];
+  
+  CLLocation *pickupLocation = [[CLLocation alloc]
+                                initWithLatitude: [_pickup[@"latitude"] doubleValue]
+                                longitude: [_pickup[@"longitude"] doubleValue]];
+  
+  CLLocation *dropoffLocation = [[CLLocation alloc]
+                                 initWithLatitude: [_dropoff[@"latitude"] doubleValue]
+                                 longitude: [_dropoff[@"longitude"] doubleValue]];
+  
+  __block UBSDKRideParametersBuilder *builder = [[UBSDKRideParametersBuilder alloc] init];
+  builder = [builder setPickupLocation: pickupLocation];
+  builder = [builder setDropoffLocation: dropoffLocation];
+  [ridesClient fetchCheapestProductWithPickupLocation: pickupLocation completion:^(UBSDKUberProduct* _Nullable product, UBSDKResponse* _Nullable response) {
+    if (product) {
+      builder = [builder setProductID: product.productID];
+      _button.rideParameters = [builder build];
+      [_button loadRideInformation];
+    }
+  }];
 }
 
 @end
