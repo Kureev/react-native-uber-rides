@@ -10,6 +10,8 @@
 		A64B94241D218C3800F40DCF /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94211D218C3800F40DCF /* LoginButton.m */; };
 		A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94231D218C3800F40DCF /* LoginButtonManager.m */; };
 		A672DFF51D21D93100C26997 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A672DFF41D21D93100C26997 /* UberRides.framework */; };
+		C24C0B9E1D22A30C00276B67 /* RideRequestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */; };
+		C24C0B9F1D22A30C00276B67 /* RideRequestButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		A64B94221D218C3800F40DCF /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButtonManager.h; sourceTree = "<group>"; };
 		A64B94231D218C3800F40DCF /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButtonManager.m; sourceTree = "<group>"; };
 		A672DFF41D21D93100C26997 /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UberRides.framework; sourceTree = "<group>"; };
+		C24C0B9A1D22A30B00276B67 /* RideRequestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideRequestButton.h; sourceTree = "<group>"; };
+		C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButton.m; sourceTree = "<group>"; };
+		C24C0B9C1D22A30B00276B67 /* RideRequestButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideRequestButtonManager.h; sourceTree = "<group>"; };
+		C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButtonManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,10 @@
 		A64B93F81D218AD800F40DCF /* RNUberSDK */ = {
 			isa = PBXGroup;
 			children = (
+				C24C0B9A1D22A30B00276B67 /* RideRequestButton.h */,
+				C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */,
+				C24C0B9C1D22A30B00276B67 /* RideRequestButtonManager.h */,
+				C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */,
 				A64B94201D218C3800F40DCF /* LoginButton.h */,
 				A64B94211D218C3800F40DCF /* LoginButton.m */,
 				A64B94221D218C3800F40DCF /* LoginButtonManager.h */,
@@ -130,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24C0B9E1D22A30C00276B67 /* RideRequestButton.m in Sources */,
+				C24C0B9F1D22A30C00276B67 /* RideRequestButtonManager.m in Sources */,
 				A64B94241D218C3800F40DCF /* LoginButton.m in Sources */,
 				A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */,
 			);
