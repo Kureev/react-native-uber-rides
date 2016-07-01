@@ -7,92 +7,245 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A64B94241D218C3800F40DCF /* LoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94211D218C3800F40DCF /* LoginButton.m */; };
-		A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A64B94231D218C3800F40DCF /* LoginButtonManager.m */; };
-		A672DFF51D21D93100C26997 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A672DFF41D21D93100C26997 /* UberRides.framework */; };
-		C24C0B9E1D22A30C00276B67 /* RideRequestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */; };
-		C24C0B9F1D22A30C00276B67 /* RideRequestButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */; };
+		A61FEB1F1D25326800F770F1 /* RNUberSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A61FEB1E1D25326800F770F1 /* RNUberSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61FEB971D25788E00F770F1 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61FEB921D25786500F770F1 /* UberRides.framework */; };
+		A6652B3F1D272B4E000FFE69 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61FEB631D25783600F770F1 /* ObjectMapper.framework */; };
+		A6652B881D272C30000FFE69 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6652B7D1D272C0C000FFE69 /* OHHTTPStubs.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A64B93F41D218AD800F40DCF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		A61FEB621D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F7619F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOS";
 		};
-/* End PBXCopyFilesBuildPhase section */
+		A61FEB641D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1602FF1AC023D5000CD69A;
+			remoteInfo = "ObjectMapper-Mac";
+		};
+		A61FEB661D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A2AD03D1B2C78540097E150;
+			remoteInfo = "ObjectMapper-watchOS";
+		};
+		A61FEB681D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7A61BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOS";
+		};
+		A61FEB6A1D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAC8F8119F03C2900E7A677;
+			remoteInfo = "ObjectMapper-iOSTests";
+		};
+		A61FEB6C1D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD1603091AC023D6000CD69A;
+			remoteInfo = "ObjectMapper-MacTests";
+		};
+		A61FEB6E1D25783600F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A05B7AF1BE274BE00F19B53;
+			remoteInfo = "ObjectMapper-tvOSTests";
+		};
+		A61FEB911D25786500F770F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61FEB8B1D25786500F770F1 /* UberRides.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC0404751BFACD1D00AC1501;
+			remoteInfo = UberRides;
+		};
+		A6652B781D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09110A4119805F4800D175E4;
+			remoteInfo = "OHHTTPStubs iOS StaticLib";
+		};
+		A6652B7A1D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09110A5119805F4800D175E4;
+			remoteInfo = "OHHTTPStubs iOS Lib Tests";
+		};
+		A6652B7C1D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 725CD99B1A9EB65100F84C8B;
+			remoteInfo = "OHHTTPStubs iOS Framework";
+		};
+		A6652B7E1D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 093442F91B80EC4A00A91535;
+			remoteInfo = "OHHTTPStubs iOS Fmk Tests";
+		};
+		A6652B801D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 095981C219806A7900807DBE;
+			remoteInfo = "OHHTTPStubs Mac Framework";
+		};
+		A6652B821D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 095981D219806A7900807DBE;
+			remoteInfo = "OHHTTPStubs Mac Tests";
+		};
+		A6652B841D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EAA436A51BE1598D000E9E99;
+			remoteInfo = "OHHTTPStubs tvOS Framework";
+		};
+		A6652B861D272C0C000FFE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA100AB71BE15BE400129352;
+			remoteInfo = "OHHTTPStubs tvOS Fmk Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A64B93F61D218AD800F40DCF /* libRNUberSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNUberSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A64B94201D218C3800F40DCF /* LoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButton.h; sourceTree = "<group>"; };
-		A64B94211D218C3800F40DCF /* LoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButton.m; sourceTree = "<group>"; };
-		A64B94221D218C3800F40DCF /* LoginButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginButtonManager.h; sourceTree = "<group>"; };
-		A64B94231D218C3800F40DCF /* LoginButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginButtonManager.m; sourceTree = "<group>"; };
-		A672DFF41D21D93100C26997 /* UberRides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UberRides.framework; sourceTree = "<group>"; };
-		C24C0B9A1D22A30B00276B67 /* RideRequestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideRequestButton.h; sourceTree = "<group>"; };
-		C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButton.m; sourceTree = "<group>"; };
-		C24C0B9C1D22A30B00276B67 /* RideRequestButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideRequestButtonManager.h; sourceTree = "<group>"; };
-		C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButtonManager.m; sourceTree = "<group>"; };
+		A61FEB1B1D25326800F770F1 /* RNUberSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNUberSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61FEB1E1D25326800F770F1 /* RNUberSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNUberSDK.h; sourceTree = "<group>"; };
+		A61FEB201D25326800F770F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		A61FEB8B1D25786500F770F1 /* UberRides.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UberRides.xcodeproj; sourceTree = "<group>"; };
+		A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OHHTTPStubs.xcodeproj; path = OHHTTPStubs/OHHTTPStubs.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A64B93F31D218AD800F40DCF /* Frameworks */ = {
+		A61FEB171D25326800F770F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A672DFF51D21D93100C26997 /* UberRides.framework in Frameworks */,
+				A6652B881D272C30000FFE69 /* OHHTTPStubs.framework in Frameworks */,
+				A6652B3F1D272B4E000FFE69 /* ObjectMapper.framework in Frameworks */,
+				A61FEB971D25788E00F770F1 /* UberRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A64B93ED1D218AD800F40DCF = {
+		A61FEB111D25326800F770F1 = {
 			isa = PBXGroup;
 			children = (
-				A672DFF41D21D93100C26997 /* UberRides.framework */,
-				A64B93F81D218AD800F40DCF /* RNUberSDK */,
-				A64B93F71D218AD800F40DCF /* Products */,
+				A61FEB571D25781E00F770F1 /* Libraries */,
+				A61FEB1D1D25326800F770F1 /* RNUberSDK */,
+				A61FEB1C1D25326800F770F1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A64B93F71D218AD800F40DCF /* Products */ = {
+		A61FEB1C1D25326800F770F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A64B93F61D218AD800F40DCF /* libRNUberSDK.a */,
+				A61FEB1B1D25326800F770F1 /* RNUberSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A64B93F81D218AD800F40DCF /* RNUberSDK */ = {
+		A61FEB1D1D25326800F770F1 /* RNUberSDK */ = {
 			isa = PBXGroup;
 			children = (
-				C24C0B9A1D22A30B00276B67 /* RideRequestButton.h */,
-				C24C0B9B1D22A30B00276B67 /* RideRequestButton.m */,
-				C24C0B9C1D22A30B00276B67 /* RideRequestButtonManager.h */,
-				C24C0B9D1D22A30C00276B67 /* RideRequestButtonManager.m */,
-				A64B94201D218C3800F40DCF /* LoginButton.h */,
-				A64B94211D218C3800F40DCF /* LoginButton.m */,
-				A64B94221D218C3800F40DCF /* LoginButtonManager.h */,
-				A64B94231D218C3800F40DCF /* LoginButtonManager.m */,
+				A61FEB1E1D25326800F770F1 /* RNUberSDK.h */,
+				A61FEB201D25326800F770F1 /* Info.plist */,
 			);
 			path = RNUberSDK;
 			sourceTree = "<group>";
 		};
+		A61FEB571D25781E00F770F1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */,
+				A61FEB8B1D25786500F770F1 /* UberRides.xcodeproj */,
+				A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A61FEB591D25783600F770F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61FEB631D25783600F770F1 /* ObjectMapper.framework */,
+				A61FEB651D25783600F770F1 /* ObjectMapper.framework */,
+				A61FEB671D25783600F770F1 /* ObjectMapper.framework */,
+				A61FEB691D25783600F770F1 /* ObjectMapper.framework */,
+				A61FEB6B1D25783600F770F1 /* ObjectMapper-iOSTests.xctest */,
+				A61FEB6D1D25783600F770F1 /* ObjectMapper-MacTests.xctest */,
+				A61FEB6F1D25783600F770F1 /* ObjectMapper-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A61FEB8C1D25786500F770F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61FEB921D25786500F770F1 /* UberRides.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6652B6E1D272C0C000FFE69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6652B791D272C0C000FFE69 /* libOHHTTPStubs.a */,
+				A6652B7B1D272C0C000FFE69 /* OHHTTPStubs iOS Lib Tests.xctest */,
+				A6652B7D1D272C0C000FFE69 /* OHHTTPStubs.framework */,
+				A6652B7F1D272C0C000FFE69 /* OHHTTPStubs iOS Fmk Tests.xctest */,
+				A6652B811D272C0C000FFE69 /* OHHTTPStubs.framework */,
+				A6652B831D272C0C000FFE69 /* OHHTTPStubs Mac Tests.xctest */,
+				A6652B851D272C0C000FFE69 /* OHHTTPStubs.framework */,
+				A6652B871D272C0C000FFE69 /* OHHTTPStubs tvOS Fmk Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A61FEB181D25326800F770F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61FEB1F1D25326800F770F1 /* RNUberSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A64B93F51D218AD800F40DCF /* RNUberSDK */ = {
+		A61FEB1A1D25326800F770F1 /* RNUberSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A64B93FF1D218AD800F40DCF /* Build configuration list for PBXNativeTarget "RNUberSDK" */;
+			buildConfigurationList = A61FEB231D25326800F770F1 /* Build configuration list for PBXNativeTarget "RNUberSDK" */;
 			buildPhases = (
-				A64B93F21D218AD800F40DCF /* Sources */,
-				A64B93F31D218AD800F40DCF /* Frameworks */,
-				A64B93F41D218AD800F40DCF /* CopyFiles */,
+				A61FEB161D25326800F770F1 /* Sources */,
+				A61FEB171D25326800F770F1 /* Frameworks */,
+				A61FEB181D25326800F770F1 /* Headers */,
+				A61FEB191D25326800F770F1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -100,57 +253,192 @@
 			);
 			name = RNUberSDK;
 			productName = RNUberSDK;
-			productReference = A64B93F61D218AD800F40DCF /* libRNUberSDK.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = A61FEB1B1D25326800F770F1 /* RNUberSDK.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A64B93EE1D218AD800F40DCF /* Project object */ = {
+		A61FEB121D25326800F770F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = RNUber;
+				ORGANIZATIONNAME = oss;
 				TargetAttributes = {
-					A64B93F51D218AD800F40DCF = {
+					A61FEB1A1D25326800F770F1 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = J966JLDEF9;
 					};
 				};
 			};
-			buildConfigurationList = A64B93F11D218AD800F40DCF /* Build configuration list for PBXProject "RNUberSDK" */;
+			buildConfigurationList = A61FEB151D25326800F770F1 /* Build configuration list for PBXProject "RNUberSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A64B93ED1D218AD800F40DCF;
-			productRefGroup = A64B93F71D218AD800F40DCF /* Products */;
+			mainGroup = A61FEB111D25326800F770F1;
+			productRefGroup = A61FEB1C1D25326800F770F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A61FEB591D25783600F770F1 /* Products */;
+					ProjectRef = A61FEB581D25783600F770F1 /* ObjectMapper.xcodeproj */;
+				},
+				{
+					ProductGroup = A6652B6E1D272C0C000FFE69 /* Products */;
+					ProjectRef = A6652B6D1D272C0C000FFE69 /* OHHTTPStubs.xcodeproj */;
+				},
+				{
+					ProductGroup = A61FEB8C1D25786500F770F1 /* Products */;
+					ProjectRef = A61FEB8B1D25786500F770F1 /* UberRides.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				A64B93F51D218AD800F40DCF /* RNUberSDK */,
+				A61FEB1A1D25326800F770F1 /* RNUberSDK */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A61FEB631D25783600F770F1 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = A61FEB621D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB651D25783600F770F1 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = A61FEB641D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB671D25783600F770F1 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = A61FEB661D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB691D25783600F770F1 /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = A61FEB681D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB6B1D25783600F770F1 /* ObjectMapper-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-iOSTests.xctest";
+			remoteRef = A61FEB6A1D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB6D1D25783600F770F1 /* ObjectMapper-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-MacTests.xctest";
+			remoteRef = A61FEB6C1D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB6F1D25783600F770F1 /* ObjectMapper-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ObjectMapper-tvOSTests.xctest";
+			remoteRef = A61FEB6E1D25783600F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A61FEB921D25786500F770F1 /* UberRides.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberRides.framework;
+			remoteRef = A61FEB911D25786500F770F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B791D272C0C000FFE69 /* libOHHTTPStubs.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOHHTTPStubs.a;
+			remoteRef = A6652B781D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B7B1D272C0C000FFE69 /* OHHTTPStubs iOS Lib Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OHHTTPStubs iOS Lib Tests.xctest";
+			remoteRef = A6652B7A1D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B7D1D272C0C000FFE69 /* OHHTTPStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OHHTTPStubs.framework;
+			remoteRef = A6652B7C1D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B7F1D272C0C000FFE69 /* OHHTTPStubs iOS Fmk Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OHHTTPStubs iOS Fmk Tests.xctest";
+			remoteRef = A6652B7E1D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B811D272C0C000FFE69 /* OHHTTPStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OHHTTPStubs.framework;
+			remoteRef = A6652B801D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B831D272C0C000FFE69 /* OHHTTPStubs Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OHHTTPStubs Mac Tests.xctest";
+			remoteRef = A6652B821D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B851D272C0C000FFE69 /* OHHTTPStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OHHTTPStubs.framework;
+			remoteRef = A6652B841D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6652B871D272C0C000FFE69 /* OHHTTPStubs tvOS Fmk Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OHHTTPStubs tvOS Fmk Tests.xctest";
+			remoteRef = A6652B861D272C0C000FFE69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A61FEB191D25326800F770F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A64B93F21D218AD800F40DCF /* Sources */ = {
+		A61FEB161D25326800F770F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C24C0B9E1D22A30C00276B67 /* RideRequestButton.m in Sources */,
-				C24C0B9F1D22A30C00276B67 /* RideRequestButtonManager.m in Sources */,
-				A64B94241D218C3800F40DCF /* LoginButton.m in Sources */,
-				A64B94251D218C3800F40DCF /* LoginButtonManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A64B93FD1D218AD800F40DCF /* Debug */ = {
+		A61FEB211D25326800F770F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,6 +458,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -191,10 +480,13 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A64B93FE1D218AD800F40DCF /* Release */ = {
+		A61FEB221D25326800F770F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,6 +506,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -228,41 +521,42 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A64B94001D218AD800F40DCF /* Debug */ = {
+		A61FEB241D25326800F770F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(SRCROOT)/../UberRidesSDK/**",
-				);
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = RNUberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oss.RNUberSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A64B94011D218AD800F40DCF /* Release */ = {
+		A61FEB251D25326800F770F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-					"$(SRCROOT)/../UberRidesSDK/**",
-				);
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = RNUberSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oss.RNUberSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -271,25 +565,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A64B93F11D218AD800F40DCF /* Build configuration list for PBXProject "RNUberSDK" */ = {
+		A61FEB151D25326800F770F1 /* Build configuration list for PBXProject "RNUberSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A64B93FD1D218AD800F40DCF /* Debug */,
-				A64B93FE1D218AD800F40DCF /* Release */,
+				A61FEB211D25326800F770F1 /* Debug */,
+				A61FEB221D25326800F770F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A64B93FF1D218AD800F40DCF /* Build configuration list for PBXNativeTarget "RNUberSDK" */ = {
+		A61FEB231D25326800F770F1 /* Build configuration list for PBXNativeTarget "RNUberSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A64B94001D218AD800F40DCF /* Debug */,
-				A64B94011D218AD800F40DCF /* Release */,
+				A61FEB241D25326800F770F1 /* Debug */,
+				A61FEB251D25326800F770F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A64B93EE1D218AD800F40DCF /* Project object */;
+	rootObject = A61FEB121D25326800F770F1 /* Project object */;
 }

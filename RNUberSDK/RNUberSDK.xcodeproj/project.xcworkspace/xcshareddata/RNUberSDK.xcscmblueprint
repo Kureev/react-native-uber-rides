@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8EE5486B89998B2B0B61B56D411A6801883A40F5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : 0,
+    "4403BC53303025133276511ADA74288E4A8B27AA" : 0,
+    "8EE5486B89998B2B0B61B56D411A6801883A40F5" : 0,
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "61540415-38EF-416C-A259-3C3D42FC8DD1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127" : "rides-ios-sdk\/Carthage\/Checkouts\/ObjectMapper\/",
+    "4403BC53303025133276511ADA74288E4A8B27AA" : "rides-ios-sdk\/",
+    "8EE5486B89998B2B0B61B56D411A6801883A40F5" : "RNUberSDK\/",
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : "rides-ios-sdk\/Carthage\/Checkouts\/OHHTTPStubs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNUberSDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RNUberSDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/uber\/rides-ios-sdk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4403BC53303025133276511ADA74288E4A8B27AA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Hearst-DD\/ObjectMapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58AAB0051E2B4EEDF1845A552012E6D0EBAD9127"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Kureev\/RNUberSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8EE5486B89998B2B0B61B56D411A6801883A40F5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AliSoftware\/OHHTTPStubs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2"
+    }
+  ]
+}
