@@ -1,6 +1,6 @@
 {
   "name": "react-native-uber-rides",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "React Native port for Uber Rides SDK",
   "main": "index.js",
   "scripts": {
