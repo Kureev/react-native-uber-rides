@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "526DD915DB5C3CA0F74F4BB92FE1DAD68718938B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "526DD915DB5C3CA0F74F4BB92FE1DAD68718938B" : 0,
+    "8EE5486B89998B2B0B61B56D411A6801883A40F5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7D80C16D-2185-419A-8F7F-475F5F29581E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "526DD915DB5C3CA0F74F4BB92FE1DAD68718938B" : "react-native-uber-rides\/",
+    "8EE5486B89998B2B0B61B56D411A6801883A40F5" : "react-native-uber-rides\/RNUberSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RNUberBridge",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RNUberBridge\/RNUberBridge.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Kureev\/react-native-uber-rides.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "526DD915DB5C3CA0F74F4BB92FE1DAD68718938B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Kureev\/RNUberSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8EE5486B89998B2B0B61B56D411A6801883A40F5"
+    }
+  ]
+}

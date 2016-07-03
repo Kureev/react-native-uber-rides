@@ -11,7 +11,18 @@
 		A63BE32D1D2732D20060FEA6 /* LoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A63BE3271D2732D20060FEA6 /* LoginButtonManager.m */; };
 		A63BE32E1D2732D20060FEA6 /* RideRequestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A63BE3291D2732D20060FEA6 /* RideRequestButton.m */; };
 		A63BE32F1D2732D20060FEA6 /* RideRequestButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A63BE32B1D2732D20060FEA6 /* RideRequestButtonManager.m */; };
+		A65D594C1D297B65007D301E /* RNUberSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D594B1D297B60007D301E /* RNUberSDK.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A65D594A1D297B60007D301E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65D59411D297B60007D301E /* RNUberSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A61FEB1B1D25326800F770F1;
+			remoteInfo = RNUberSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A63BE3161D27329D0060FEA6 /* CopyFiles */ = {
@@ -35,6 +46,7 @@
 		A63BE3291D2732D20060FEA6 /* RideRequestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButton.m; sourceTree = "<group>"; };
 		A63BE32A1D2732D20060FEA6 /* RideRequestButtonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideRequestButtonManager.h; sourceTree = "<group>"; };
 		A63BE32B1D2732D20060FEA6 /* RideRequestButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideRequestButtonManager.m; sourceTree = "<group>"; };
+		A65D59411D297B60007D301E /* RNUberSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNUberSDK.xcodeproj; path = ../RNUberSDK/RNUberSDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65D594C1D297B65007D301E /* RNUberSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +64,7 @@
 		A63BE30F1D27329D0060FEA6 = {
 			isa = PBXGroup;
 			children = (
+				A65D59411D297B60007D301E /* RNUberSDK.xcodeproj */,
 				A63BE31A1D27329D0060FEA6 /* RNUberBridge */,
 				A63BE3191D27329D0060FEA6 /* Products */,
 			);
@@ -77,6 +91,14 @@
 				A63BE32B1D2732D20060FEA6 /* RideRequestButtonManager.m */,
 			);
 			path = RNUberBridge;
+			sourceTree = "<group>";
+		};
+		A65D59421D297B60007D301E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A65D594B1D297B60007D301E /* RNUberSDK.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,12 +146,28 @@
 			mainGroup = A63BE30F1D27329D0060FEA6;
 			productRefGroup = A63BE3191D27329D0060FEA6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A65D59421D297B60007D301E /* Products */;
+					ProjectRef = A65D59411D297B60007D301E /* RNUberSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A63BE3171D27329D0060FEA6 /* RNUberBridge */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A65D594B1D297B60007D301E /* RNUberSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RNUberSDK.framework;
+			remoteRef = A65D594A1D297B60007D301E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A63BE3141D27329D0060FEA6 /* Sources */ = {
@@ -231,6 +269,7 @@
 		A63BE3221D27329E0060FEA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../**",
@@ -245,6 +284,7 @@
 		A63BE3231D27329E0060FEA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../**",
@@ -275,6 +315,7 @@
 				A63BE3231D27329E0060FEA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
