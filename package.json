@@ -20,7 +20,10 @@
   },
   "rnpm": {
     "ios": {
-      "project": "RNUberBridge/RNUberBridge.xcodeproj"
+      "project": "RNUberBridge/RNUberBridge.xcodeproj",
+      "sharedLibraries": [
+        "RNUberSDK"
+      ]
     }
   },
   "homepage": "https://github.com/Kureev/react-native-uber-rides#readme"

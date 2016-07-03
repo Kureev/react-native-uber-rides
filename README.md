@@ -6,8 +6,8 @@
 
 ### Installation steps
 1. `$ rnpm install react-native-uber-rides`
-3. [Configure SDK](https://github.com/uber/rides-ios-sdk#configuring-ios-90)
-5. Use it:
+2. [Configure SDK](https://github.com/uber/rides-ios-sdk#configuring-ios-90)
+3. Use it:
 
   ```js
   import {LoginButton} from 'react-native-uber-rides';
