@@ -1,3 +1,7 @@
+## Uber Rides SDK port to React Native
+
+![Uber Rides for React Native](https://s31.postimg.org/5s35dq9kb/uber.jpg)
+
 ## Get Started
 
 ### Prerequirements
