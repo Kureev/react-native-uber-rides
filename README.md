@@ -10,7 +10,7 @@
 3. Use it:
 
   ```js
-  import {LoginButton} from 'react-native-uber-rides';
+  import {LoginButton, RideRequestButton} from 'react-native-uber-rides';
   // ...
   class Foo extends React.Component {
     render() {
@@ -20,6 +20,9 @@
             onLogin={fn?}
             onLoginError={fn?}
             onLogout={fn?} />
+          <RideRequestButton
+            pickup={{latitude: 0.0, longitude: 0.0}}
+            dropoff={{latitude: 1.0, longitude: 1.0}} />
         </View>
       );
     }
