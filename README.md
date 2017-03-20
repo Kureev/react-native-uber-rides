@@ -1,5 +1,7 @@
 ## Uber Rides SDK port to React Native
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kureev/react-native-uber-rides.svg)](https://greenkeeper.io/)
+
 ![Uber Rides for React Native](https://s31.postimg.org/5s35dq9kb/uber.jpg)
 
 ## Get Started
